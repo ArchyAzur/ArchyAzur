@@ -1,0 +1,15 @@
+{
+  "name": "This egg will hatched !",
+  "description": "A hen laid this egg ... But who's in it ?!",
+  "image": "ipfs://QmUKEZhByEgwyKNNycWZwGQ3NBSHTNJzXvomqoitSNByxe",
+  "dna": "69a810179e02187d906f607f2d6906d5cdcace6b",
+  "edition": 0,
+  "date": 1635973121647,
+  "attributes": [
+    {
+      "trait_type": "Egg",
+      "value": "Shell"
+    }
+  ],
+  "compiler": "Myself"
+}
