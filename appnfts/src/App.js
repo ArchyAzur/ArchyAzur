@@ -176,20 +176,45 @@ function App() {
 
   return (
     <div>
+      <div><h2>{data.totalSupply} / 5 000 remaining</h2></div>
+      <div id="fdw-pricing-table">
+    <div class="plan plan1">
+        <div class="price">1 bird</div>  
+        <div class="freeBirds">no free birds</div>      
+        <ul>
+            <li><p className="cost">Cost : {data.cost / 10**18} eth</p></li>
+            <li>1 bird get for 1 bird buy</li>		
+            <li><img src="./img/mint1Bird.png" alt="Birds invasion NFT 1"/></li>	
+        </ul>
+        <button className="button" onClick={mint1Bird}>Mint</button>     
+    </div>
+    <div class="plan plan2">
+        <div class="price">5 birds</div>
+        <div class="freeBirds">1 free bird</div>  
+        <ul>
+          <li><p className="cost">Cost : {data.cost * 4 / 10**18} eth</p></li>	
+           <li>1 free bird in this package</li>		
+           <li><img src="./img/mint5Birds.png" alt="Birds invasion NFT 5"/></li>
+        </ul>
+        <button className="button" onClick={mint5Birds}>Mint</button>
+    </div>
+    <div class="plan plan3">
+        <div class="price">10 birds</div>
+        <div class="freeBirds">3 free birds</div>
+        <ul>
+        <li><p className="cost">Cost : {data.cost * 7 / 10**18} eth</p></li>
+            <li>3 free birds in this package</li>		
+            <li><img src="./img/mint10Birds.png" alt="Birds invasion NFT 10"/></li>
+        </ul>
+        <button className="button" onClick={mint10Birds}>Mint</button>
+    </div>
+    </div>
+
       <div className="App" onLoad={displayOwnerOnly}>
       <button className="ownerProperty button" onClick={reveal}>Reveal NFT !!</button>
         <button className="ownerProperty button" onClick={withdraw}>Withdraw</button>
           <div className="container">
             <p>{error}</p>
-            
-            <div className="mintButtons">
-                <button className="button" onClick={mint1Bird}>Mint 1 bird</button><br/><br/>
-                <button className="button" onClick={mint5Birds}>Mint 5 birds (1 bird free)</button><br/><br/>
-                <button className="button" onClick={mint10Birds}>Mint 10 birds (3 birds free)</button><br/><br/>
-            </div>
-
-            <p className="cost">Each Bird NFT cost {data.cost / 10**18} eth excluding gas price</p>
-           
           </div>
       </div>
     </div>

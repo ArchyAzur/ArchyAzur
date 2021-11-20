@@ -1747,7 +1747,7 @@ ul.navbar-top a:hover {
     /* CARROUSSEL */
 
 /** * Carousel.sass * @author: Dang Van Thanh * @github: https://github.com/dangvanthanh/carousel.sass * @description: A Simple Carousel Pure CSS Using Sass * @version: 1.0.0 */
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__prev>label:nth-child(5),
+.carousel>input[type="radio"]:nth-child(1):checked~.carousel__prev>label:nth-child(7),
 .carousel>input[type="radio"]:nth-child(1):checked~.carousel__next>label:nth-child(2),
 .carousel>input[type="radio"]:nth-child(2):checked~.carousel__prev>label:nth-child(1),
 .carousel>input[type="radio"]:nth-child(2):checked~.carousel__next>label:nth-child(3),
@@ -1756,7 +1756,11 @@ ul.navbar-top a:hover {
 .carousel>input[type="radio"]:nth-child(4):checked~.carousel__prev>label:nth-child(3),
 .carousel>input[type="radio"]:nth-child(4):checked~.carousel__next>label:nth-child(5),
 .carousel>input[type="radio"]:nth-child(5):checked~.carousel__prev>label:nth-child(4),
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__next>label:nth-child(1) {
+.carousel>input[type="radio"]:nth-child(5):checked~.carousel__next>label:nth-child(6),
+.carousel>input[type="radio"]:nth-child(6):checked~.carousel__prev>label:nth-child(5),
+.carousel>input[type="radio"]:nth-child(6):checked~.carousel__next>label:nth-child(7),
+.carousel>input[type="radio"]:nth-child(7):checked~.carousel__prev>label:nth-child(6),
+.carousel>input[type="radio"]:nth-child(7):checked~.carousel__next>label:nth-child(1) {
 	opacity: 1 !important;
 	z-index: 3;
 }
@@ -1866,8 +1870,6 @@ body {
     vertical-align: middle;
 }
 .carousel__prev > label, .carousel__next > label {
-    border: 1px solid #02b6ff;
-    border-radius: 50%;
     cursor: pointer;
     display: block;
     width: 40px;
@@ -1891,7 +1893,7 @@ body {
     height: inherit;
 }
 .carousel__prev > label:before, .carousel__next > label:before {
-    background: linear-gradient(to top, #02b6ff 0%, #02b6ff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #02b6ff 0%, #02b6ff 10%, rgba(51, 51, 51, 0) 10%);
+    background: linear-gradient(to top, #02b6ff 0%, #02b6ff 30%, rgba(51, 51, 51, 0) 30%), linear-gradient(to left, #02b6ff 0%, #02b6ff 30%, rgba(51, 51, 51, 0) 30%);
     width: 60%;
     height: 60%;
     top: 20%;
@@ -1930,6 +1932,190 @@ body {
     width: 20px;
     height: 20px;
 }
+
+
+
+
+
+
+/* Slider
+http://www.freshdesignweb.com/free-beautiful-css3-table-style.html
+*/
+#fdw-pricing-table {
+    margin:0 auto;
+    text-align: center;
+    width: 928px; /* total computed width */
+    zoom: 1;
+}
+
+#fdw-pricing-table:before, #fdw-pricing-table:after {
+  content: "";
+  display: table
+}
+
+#fdw-pricing-table:after {
+  clear: both
+}
+
+/* --------------- */	
+
+#fdw-pricing-table .plan {
+    background: #fff;      
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 20px;
+    width: 32%;
+    float: left;
+    _display: inline; /* IE6 double margin fix */
+    position: relative;
+    margin: 0 5px;
+    -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);		
+}
+
+#fdw-pricing-table .plan:after {
+  z-index: -1; 
+  position: absolute; 
+  content: "";
+  bottom: 10px;
+  right: 4px;
+  width: 80%; 
+  top: 80%; 
+  -webkit-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);   
+  -moz-box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+  -webkit-transform: rotate(3deg);    
+  -moz-transform: rotate(3deg);   
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);	
+}	
+
+#fdw-pricing-table .popular-plan {
+    top: -20px;
+    padding: 40px 20px;   
+}
+
+/* --------------- */	
+
+#fdw-pricing-table .header {
+    position: relative;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 40px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: 8px solid;
+    background-color: #eee;
+    background-image: -moz-linear-gradient(#fff,#eee);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+    background-image: -webkit-linear-gradient(#fff, #eee);
+    background-image: -o-linear-gradient(#fff, #eee);
+    background-image: -ms-linear-gradient(#fff, #eee);
+    background-image: linear-gradient(#fff, #eee);
+}
+
+#fdw-pricing-table .header:after {
+    position: absolute;
+    bottom: -8px; left: 0;
+    height: 3px; width: 100%;
+    content: '';
+    /*background-image: url(images/bar.png);*/
+}
+
+#fdw-pricing-table .popular-plan .header {
+    margin-top: -40px;
+    padding-top: 60px;		
+}
+
+#fdw-pricing-table .plan1 .header{
+    border-bottom-color: #B3E03F;
+}
+
+#fdw-pricing-table .plan2 .header{
+    border-bottom-color: #7BD553;
+}
+
+#fdw-pricing-table .plan3 .header{
+    border-bottom-color: #3AD5A0;
+}
+
+#fdw-pricing-table .plan4 .header{
+    border-bottom-color: #45D0DA;
+}			
+
+/* --------------- */
+
+#fdw-pricing-table .price{
+    font-size: 45px;
+}
+
+#fdw-pricing-table .freeBirds{
+    font-size: 13px;
+    padding-top: 2%;
+    color: #999;
+}
+
+/* --------------- */
+
+#fdw-pricing-table ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+#fdw-pricing-table li {
+    padding: 10px 0;
+}
+
+/* --------------- */
+    
+#fdw-pricing-table .signup {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    font: bold 14px Arial, Helvetica;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;       
+    background-color: #72ce3f;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;     
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+    opacity: .9;       
+}
+
+#fdw-pricing-table .signup:hover {
+    opacity: 1;       
+}
+
+#fdw-pricing-table .signup:active {
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;
+    box-shadow: 0 2px 2px rgba(0,0,0,.3) inset;       
+}			
+
+#fdw-pricing-table .plan1 .signup{
+    background: #B3E03F;
+}
+
+#fdw-pricing-table .plan2 .signup{
+    background: #7BD553;
+}
+
+#fdw-pricing-table .plan3 .signup{
+    background: #3AD5A0;
+}
+
+#fdw-pricing-table .plan4 .signup{
+    background: #45D0DA;
+}	
+
+/* end --------------- */
+
+
 
 
 

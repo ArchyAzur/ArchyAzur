@@ -110,6 +110,33 @@ h3 {
   background-color: #02b6ff;
 }
 
+#rarity {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #000000;
+  padding: 4%;
+  color: white;
+  border: 2px solid white;
+  overflow-x:auto;
+}
+
+#rarity table {
+  font-size: 2em;
+}
+
+#rarity table td {
+  vertical-align: middle;
+}
+
+.rarityTitle {
+  color : #D4AF37;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* TIMELINE */
 *,
 *::before,
