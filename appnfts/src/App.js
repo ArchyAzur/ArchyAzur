@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
-import BIContract from './artifacts/contracts/BIContract.sol/BIContract.json';
+// AUTOMATIC Artifact :
+//import BIContract from './artifacts/contracts/BIContract.sol/BIContract.json';
+// MANUAL Artifact (may not be the last version) :
+import BIContract from './contracts/BIContract.sol/BIContract.json';
 import './App.css';
 import React from 'react';
 
