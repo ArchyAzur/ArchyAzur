@@ -131,6 +131,10 @@ h3 {
   vertical-align: middle;
 }
 
+#rarity table th {
+  padding: 30px;
+}
+
 #rarity img {
   width: 37%;
 }
@@ -147,6 +151,11 @@ h3 {
 #piafiGif {
   position:absolute;
   top:50px;
+}
+
+.dateRevelation {
+  color: white;
+  margin: 2%;
 }
 
 /* TIMELINE */

@@ -44,6 +44,7 @@ function App() {
 
   async function mint1Bird() {
     if (typeof window.ethereum !== 'undefined') {
+      //alert("not yet ^^");
       let accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
@@ -66,47 +67,49 @@ function App() {
 
   async function mint5Birds() {
     if (typeof window.ethereum !== 'undefined') {
-      let accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const signer = provider.getSigner();
-      const contract = new ethers.Contract(BIContractAdress, BIContract.abi, signer);
-      try {
-        let overrides = {
-          from: accounts[0],
-          value: String(data.cost * 4)
-        }
+      alert("not yet ^^");
+      // let accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
+      // const provider = new ethers.providers.Web3Provider(window.ethereum);
+      // const signer = provider.getSigner();
+      // const contract = new ethers.Contract(BIContractAdress, BIContract.abi, signer);
+      // try {
+      //   let overrides = {
+      //     from: accounts[0],
+      //     value: String(data.cost * 4)
+      //   }
 
-        const transaction = await contract.mint(accounts[0], 5, overrides);
-        await transaction.wait();
-        fetchData();
-      }
-      catch(err) {
-        setError(err.message);
-        console.log("Error on mint5Birds : " + err);
-      }
+      //   const transaction = await contract.mint(accounts[0], 5, overrides);
+      //   await transaction.wait();
+      //   fetchData();
+      // }
+      // catch(err) {
+      //   setError(err.message);
+      //   console.log("Error on mint5Birds : " + err);
+      // }
     }
   }
 
   async function mint10Birds() {
     if (typeof window.ethereum !== 'undefined') {
-      let accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const signer = provider.getSigner();
-      const contract = new ethers.Contract(BIContractAdress, BIContract.abi, signer);
-      try {
-        let overrides = {
-          from: accounts[0],
-          value: String(data.cost * 7)
-        }
+      alert("not yet ^^");
+      // let accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
+      // const provider = new ethers.providers.Web3Provider(window.ethereum);
+      // const signer = provider.getSigner();
+      // const contract = new ethers.Contract(BIContractAdress, BIContract.abi, signer);
+      // try {
+      //   let overrides = {
+      //     from: accounts[0],
+      //     value: String(data.cost * 7)
+      //   }
 
-        const transaction = await contract.mint(accounts[0], 10, overrides);
-        await transaction.wait();
-        fetchData();
-      }
-      catch(err) {
-        setError(err.message);
-        console.log("Error on mint10Birds : " + err);
-      }
+      //   const transaction = await contract.mint(accounts[0], 10, overrides);
+      //   await transaction.wait();
+      //   fetchData();
+      // }
+      // catch(err) {
+      //   setError(err.message);
+      //   console.log("Error on mint10Birds : " + err);
+      // }
     }
   }
 
@@ -172,7 +175,7 @@ function App() {
 
   return (
     <div>
-      <div><h2>{data.totalSupply} / 5 000</h2></div>
+      <div><h2>{5000 - data.totalSupply} / 5000 remaining</h2></div>
       <div id="fdw-pricing-table">
     <div className="plan plan1">
         <div className="price">1 bird</div>  

@@ -10,6 +10,7 @@
       <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
       <link rel="stylesheet" href="../src/css/style.css">
+      <link rel="stylesheet" href="./css/flipTimer.css">
       <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
       <script type="text/javascript" src="./js/magnific.js"></script>
       <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
@@ -17,6 +18,8 @@
       <script type="text/javascript" src="./js/scriptTypekit.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
       <script type="text/javascript" src="./js/script.js"></script>
+      <script type="text/javascript" src="./js/jquery.flipTimer.js"></script>
+
       <title>Birds Invasion</title>
    </head>
    <body class="firewatch launch withxbone">
@@ -26,7 +29,7 @@
          </li>
          <li><a href="#twitter"><strong><span class="collapse"><i class="fab fa-twitter"></i></span></strong></a></li>
          <li><a href="#discord"><strong><span class="collapse"><i class="fab fa-discord"></i></span></strong></a></li>
-         <li><a href="#faq"><strong><span class="collapse">FAQ</strong></a></li>
+         <!-- <li><a href="#faq"><strong><span class="collapse">FAQ</strong></a></li> -->
          <li><a href="#team"><strong><span class="collapse">Team</span></strong></a></li>
          <li><a href="#rarity"><strong><span class="collapse">Rarity</span></strong></a></li>
          <li><a href="#birds"><strong><span class="collapse">Birds</span></strong></a></li>
@@ -62,24 +65,35 @@
             <div id="main">
                <div id="mint">
                   <h1>Mint your <i class="fas fa-dove"></i> on Ethereum</h1>
+
+                  <div class="dateRevelation">31 December 23h 59m 59s</div>
+                  <div class="flipTimer">
+                     <div class="days"></div>
+                     <div class="hours"></div>
+                     <div class="minutes"></div>
+                     <div class="seconds"></div>
+                   </div>
+                  <div>before revelation</div>
+                   <br/><br/>
                   <div id="root"></div>
                </div>
-               
+
                <div class="section companiesLink">
                   <span class="companies"><img src="./img/logo/Opensea.png" alt=""></span>
                   <span class="companies"><img src="./img/logo/Ethereum.png" alt=""></span>
                   <span class="companies"><img src="./img/logo/Metamask.png" alt=""></span>
                </div>
-               
-               <!--<div id="piafiGif"><img src="./img/gif/Piafi.gif" alt=""></div>-->
 
                <div id="beginning" class="section description">
                   <h1>Beginning <i class="fas fa-play"></i></h1>
                   <h5>
                      Angry Birds, Flappy Bird, Duck Hunt rocked your childhood ?
                      It's time to discover new ones !
-                     You will be able to play with these new birds that YOU own in a web 3.0 world
-                     The eggs will hatch when all the eggs have been purchased.
+                     You will be able to play with these new birds that YOU own in a web 3.0 world.
+                     The eggs will hatch at the end of the countdown.
+                     <br />
+                     Firsly Birds invasion will be a video game in order to enjoy your NFT !
+                     
                   </h5>
                   <div class="columntext">
                      <p class="left">The year is 1984.
@@ -109,7 +123,7 @@
                      <ul>
                         <li>
                            <div>
-                              <time>0 % <i class="fas fa-rocket"></i></time>
+                              <time>Launch <i class="fas fa-rocket"></i></time>
                               The drop release
                               date will be announced once we finished defining the
                               rarity criteria. Our goal is to design a collection like
@@ -122,7 +136,7 @@
                         </li>
                         <li>
                            <div>
-                              <time>25 % <i class="fas fa-kiwi-bird"></i></time>
+                              <time>15 % SOLD <i class="fas fa-feather-alt"></i></time>
                               We are therefore going to offer our Holders the possibility of receiving
                               BTC every month without doing anything. How? By doing a massive
                               invest in High Quality BTC Miner and you are in charge of
@@ -132,17 +146,36 @@
                         </li>
                         <li>
                            <div>
-                              <time>50 % <i class="fas fa-gift"></i></time>
+                              <time>25 % SOLD <i class="fas fa-kiwi-bird"></i></time>
+                              We are therefore going to offer our Holders the possibility of receiving
+                              BTC every month without doing anything. How? By doing a massive
+                              invest in High Quality BTC Miner and you are in charge of
+                              everything ! A real passive income backed by mining BTC, isn’t
+                              that great!
+                           </div>
+                        </li>
+                        <li>
+                           <div>
+                              <time>50 % SOLD <i class="fas fa-gift"></i></time>
                               Big Giveaways Time ! We will send to every owners a personalized
-                              4K twitter Banner. We are also aiming to create clothing and
+                              Banner. We are also aiming to create clothing and
                               merchandise. We have started discussions with a quite famous
                               designer for making quality and ecological clothing.
                            </div>
                         </li>
                         <li>
                            <div>
-                              <time>75 % <i class="fas fa-crow"></i></time>
-                              We are collaborating with Metaverse company to allow MAND-0
+                              <time>65 % SOLD <i class="fas fa-crow"></i></time>
+                              Big Giveaways Time ! We will send to every owners a personalized
+                              Banner. We are also aiming to create clothing and
+                              merchandise. We have started discussions with a quite famous
+                              designer for making quality and ecological clothing.
+                           </div>
+                        </li>
+                        <li>
+                           <div>
+                              <time>75 % SOLD <i class="fas fa-gift"></i></time>
+                              We are collaborating with Metaverse company to allow Birds Invasion
                               Owners to import their avatar in the other universe. You can walk
                               around the Metaverse using your avatar to appear incognito. This
                               avatar will also give you access to limited offers to our community
@@ -150,9 +183,9 @@
                         </li>
                         <li>
                            <div>
-                              <time>100 % <i class="fas fa-dove"></i></time>
-                              After the drop we will continue to evolve the MAND-0 Universe.
-                              Every owners will receive an NFT from the MAND-0 WEAPON collection.
+                              <time>100 % SOLD <i class="fas fa-dove"></i></time>
+                              After the drop we will continue to evolve the invasion Universe.
+                              Every owners will receive an NFT from the Birds invasion collection.
                               We are also collaborating with other NFT collections to give you
                               the best experience and opportunity to be part of this community.
                            </div>
@@ -272,9 +305,11 @@
                   <span class="toonTeam">Graphist<img src="./img/team/LeaToon.png" alt=""></span>
                   <span class="toonTeam">Developer<img src="./img/team/ArchyToon.png" alt=""></span>
                </div>
-               <div id="faq" class="section">
+               <!-- <div id="faq" class="section">
                   <h1>FAQ <i class="fas fa-question"></i></h1>
-               </div>
+
+                  <div><div>
+               </div> -->
                <div id="social-networks" class="section">
                   <h1>Social Networks <i class="fab fa-twitter"></i>  <i class="fab fa-facebook"></i></h1>
                   <h3><a href="#">Discord</a></h3>
@@ -290,23 +325,20 @@
       <script type="text/javascript">
          $(document).ready(function() {
            startParallax();
-           $('.thumbnails').magnificPopup({
-             delegate: 'li a',
-             type:'image',
-             gallery: {
-               enabled: true,
-               preload: [1,1]
-             },
-             mainClass: 'mfp-with-zoom',
-             zoom: {
-               enabled: true,
-               duration: 300,
-               easing: 'ease-in-out',
-               opener: function(openerElement) {
-                 return openerElement.is('img') ? openerElement : openerElement.find('img');
-               }
-             }
-           });
+
+           $('.flipTimer').flipTimer({ 
+
+            // count up or countdown
+            direction: 'down', 
+
+            // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
+            date: 'December 31, 2021 23:59:59', 
+
+            // callback works only with direction = "down"
+            callback: function() { console.log('times up!'); }
+
+            });
+
          
            $("#year").text((new Date).getFullYear());
            
@@ -343,15 +375,7 @@
                window.addEventListener("scroll", callbackFunc);
          
                })();
-         
-             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-         
-             ga('create', 'UA-46156385-1', 'cssscript.com');
-             ga('send', 'pageview');
-             
+
              const ethereumButton = $('.enableEthereumButton');
          
              if (typeof window.ethereum !== 'undefined') {
@@ -373,28 +397,6 @@
                $('.accountMetamask').removeClass('hidden');
                ethereumButton.hide();
              }
-
-            function init(){
-               var intervalID = setInterval(myCallback, 100);
-              // piafi.show().animate({ top: 305 }, {duration: 1000, easing: 'easeOutBounce'});
-            }
-
-            function myCallback(a, b) {
-               let piafi = $('#piafiGif');
-   
-               console.log(piafi.left);
-
-       
-               piafi.animate({left: "+=500"}, 2000);
-
-               // Your code here
-               // Parameters are purely optional.
-               console.log(a);
-               console.log(b);
-            }
-
-            //init();
-         
          });
          
       </script>

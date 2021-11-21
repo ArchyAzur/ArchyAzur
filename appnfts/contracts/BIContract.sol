@@ -28,7 +28,7 @@ contract BIContract is ERC721Enumerable, Ownable {
     contractAddressOwner = msg.sender;
 
     // ATTENTION : le maxMintAmount doit être au dessus de la valeur minté en dessous :
-    mint(msg.sender, 5);
+    mint(msg.sender, 250);
   }
 
   // internal
