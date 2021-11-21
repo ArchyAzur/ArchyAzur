@@ -136,10 +136,6 @@ function App() {
 
          const transaction = await contract.reveal();
          await transaction.wait();
-
-         //const transaction = await contract.revealed();
-         //console.log(transaction);
-
         fetchData();
       }
       catch(err) {
@@ -176,21 +172,21 @@ function App() {
 
   return (
     <div>
-      <div><h2>{data.totalSupply} / 5 000 remaining</h2></div>
+      <div><h2>{data.totalSupply} / 5 000</h2></div>
       <div id="fdw-pricing-table">
-    <div class="plan plan1">
-        <div class="price">1 bird</div>  
-        <div class="freeBirds">no free birds</div>      
+    <div className="plan plan1">
+        <div className="price">1 bird</div>  
+        <div className="freeBirds">no free birds</div>      
         <ul>
             <li><p className="cost">Cost : {data.cost / 10**18} eth</p></li>
-            <li>1 bird get for 1 bird buy</li>		
+            <li>1 bird collected for 1 bird minted</li>		
             <li><img src="./img/mint1Bird.png" alt="Birds invasion NFT 1"/></li>	
         </ul>
         <button className="button" onClick={mint1Bird}>Mint</button>     
     </div>
-    <div class="plan plan2">
-        <div class="price">5 birds</div>
-        <div class="freeBirds">1 free bird</div>  
+    <div className="plan plan2">
+        <div className="price">5 birds</div>
+        <div className="freeBirds">1 free bird</div>  
         <ul>
           <li><p className="cost">Cost : {data.cost * 4 / 10**18} eth</p></li>	
            <li>1 free bird in this package</li>		
@@ -198,9 +194,9 @@ function App() {
         </ul>
         <button className="button" onClick={mint5Birds}>Mint</button>
     </div>
-    <div class="plan plan3">
-        <div class="price">10 birds</div>
-        <div class="freeBirds">3 free birds</div>
+    <div className="plan plan3">
+        <div className="price">10 birds</div>
+        <div className="freeBirds">3 free birds</div>
         <ul>
         <li><p className="cost">Cost : {data.cost * 7 / 10**18} eth</p></li>
             <li>3 free birds in this package</li>		

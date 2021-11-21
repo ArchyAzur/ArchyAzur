@@ -214,7 +214,6 @@
      margin-right: auto;
      z-index: 99;
      position: relative;
-     background-color: #210002;
  }
  
  
@@ -239,7 +238,6 @@
  }
  .section.description.paxcallout h5 {
      margin-bottom: 12px;
-     letter-spacing: 11px;
      font-size: 26px;
      line-height: 1em;
  }
@@ -282,12 +280,14 @@
      font-weight: 700;
      line-height: 1.5em;
      margin-bottom: 30px;
+     font-family: cursive;
  }
  
  .columntext p {
      margin-bottom: 1.6em;
      width: 325px;
      display: inline-block;
+     font-family: cursive;
  }
      .columntext p.left {
          margin-right: 50px;
