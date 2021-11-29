@@ -64,7 +64,7 @@
          <div id="maincontain">
             <div id="main">
                <div id="mint">
-                  <h1>Mint your <i class="fas fa-dove"></i> on Ethereum</h1>
+                  <h1>Mint your <i class="fas fa-dove"></i> (on Rinkeby for testing)</h1>
 
                   <div class="dateRevelation">31 December 23h 59m 59s</div>
                   <div class="flipTimer">
@@ -73,7 +73,7 @@
                      <div class="minutes"></div>
                      <div class="seconds"></div>
                    </div>
-                  <div>before revelation</div>
+                   <div class="dateRevelation">before revelation</div>
                    <br/><br/>
                   <div id="root"></div>
                </div>
@@ -339,6 +339,23 @@
 
             });
 
+           $('.thumbnails').magnificPopup({
+             delegate: 'li a',
+             type:'image',
+             gallery: {
+               enabled: true,
+               preload: [1,1]
+             },
+             mainClass: 'mfp-with-zoom',
+             zoom: {
+               enabled: true,
+               duration: 300,
+               easing: 'ease-in-out',
+               opener: function(openerElement) {
+                 return openerElement.is('img') ? openerElement : openerElement.find('img');
+               }
+             }
+           });
          
            $("#year").text((new Date).getFullYear());
            

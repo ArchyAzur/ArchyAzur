@@ -28,7 +28,7 @@ body {
 }
 
 .button {
-  background: rgb(1 179 255);
+  background: #01B3FF;
   border-radius: 10px;
   border: 0;
   cursor: pointer;
@@ -156,6 +156,7 @@ h3 {
 .dateRevelation {
   color: white;
   margin: 2%;
+  font-size: 2em;
 }
 
 /* TIMELINE */
@@ -204,7 +205,7 @@ h1 {
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #02b6ff;
+  background: white;
 }
 
 .timeline ul li::after {
@@ -224,7 +225,7 @@ h1 {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #02b6ff;
+  background: #01B3FF;
 }
 
 .timeline ul li div::before {
@@ -243,7 +244,7 @@ h1 {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #02b6ff transparent transparent;
+  border-color: transparent #01B3FF transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -253,7 +254,7 @@ h1 {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #02b6ff;
+  border-color: transparent transparent transparent #01B3FF;
 }
 
 time {
@@ -272,7 +273,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: #02b6ff;
+  background: white;
 }
 
 .timeline ul li div {
@@ -325,6 +326,6 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #02b6ff transparent transparent;
+    border-color: transparent #ff3030 transparent transparent;
   }
 }

@@ -10,7 +10,7 @@ contract BIContract is ERC721Enumerable, Ownable {
   string public baseExtension = ".json";
   uint256 public cost = 0.02 ether;
   uint256 public maxSupply = 5000;
-  uint256 public maxMintAmount = 10;
+  uint256 public maxMintAmount = 250;
   bool public paused = false;
   bool public revealed = false;
   address private contractAddressOwner;
@@ -27,8 +27,8 @@ contract BIContract is ERC721Enumerable, Ownable {
     setNotRevealedURI(_initNotRevealedUri);
     contractAddressOwner = msg.sender;
 
-    // ATTENTION : le maxMintAmount doit être au dessus de la valeur minté en dessous :
-    mint(msg.sender, 250);
+    mint(msg.sender, maxMintAmount);
+    maxMintAmount = 10;
   }
 
   // internal
