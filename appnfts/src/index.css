@@ -284,14 +284,12 @@
  }
  
  .columntext p {
-     margin-bottom: 1.6em;
-     width: 325px;
-     display: inline-block;
+
      font-family: cursive;
  }
-     .columntext p.left {
-         margin-right: 50px;
-     }
+.columntext p.left {
+    margin-right: 50px;
+}
  
  
  /* BANNER STYLING */

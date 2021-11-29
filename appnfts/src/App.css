@@ -205,7 +205,7 @@ h1 {
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: white;
+  background: #ffe251;
 }
 
 .timeline ul li::after {
@@ -273,7 +273,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: white;
+  background: #ffe251;
 }
 
 .timeline ul li div {
